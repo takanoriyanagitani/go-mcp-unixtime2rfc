@@ -1,0 +1,3 @@
+Converts a Unix timestamp to a formatted string. Provide one of `unixtime` (seconds), `unixtimeMs` (milliseconds), or `unixtimeUs` (microseconds). If multiple are provided, `unixtime` takes precedence, followed by `unixtimeMs`.
+An optional 'layout' parameter can be provided. Defaults to RFC3339 if layout is omitted.
+Supported layouts: ANSIC, UnixDate, RubyDate, RFC822, RFC822Z, RFC850, RFC1123, RFC1123Z, RFC3339, RFC3339Nano, Kitchen, Stamp, StampMilli, StampMicro, StampNano, DateTime, DateOnly, TimeOnly.
