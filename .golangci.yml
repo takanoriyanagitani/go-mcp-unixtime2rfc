@@ -1,0 +1,15 @@
+version: "2"
+
+linters:
+  default: all
+  disable:
+    - wsl
+    - wsl_v5 # Explicitly disable wsl_v5, as it was still reporting despite wsl being disabled.
+    - depguard
+    - nlreturn
+    - nonamedreturns
+    - gochecknoglobals
+    - revive
+  exclusions:
+    paths:
+    - (.+)_test\.go
